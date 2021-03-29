@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>html dom 测试1</title>
+    </head>
+    <body>
+        <button id="demo" type="button" onclick="change()">点我</button>
+        <script>
+            function change(){
+             x=document.getElementById("demo");
+             if(x.innerHTML=="点我"){
+                x.innerHTML="我被点了？！";
+                }
+            else if(x.innerHTML=="我被点了？！"){
+                    alert("不要再点了！");
+                    x.innerHTML="点我";
+                }
+            }
+        </script>
+    </body>
+</html>
